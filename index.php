@@ -4,7 +4,6 @@
 <div id="content">
     <div class="blog-index">
 
-
     <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
 
     <?php get_template_part( 'content', get_post_format() ); ?>
@@ -28,9 +27,7 @@
     <?php endif ?>
 
     </div>
-
     <?php get_sidebar(); ?>
-
 </div>
 </div>
 
