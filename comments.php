@@ -45,12 +45,33 @@
         
     <?php endif; ?>
 
-    <?php comment_form(
-    array(
-        'comment_notes_before' =>__( ''),
-        'comment_notes_after' => '',
-        'comment_field'  => '<p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>',
-    )   
-    ); ?>
+    <?php
+
+    $fields =  array(
+    'author' => '<p class="comment-form-author">
+                <input type="text" name="author" id="author" value="' . esc_attr( $commenter['comment_author'] ) . '" value="" size="30" tabindex="1" ' . $aria_req . '>' . '
+                <label for="author"><small>' . __( 'Name' ) . ( $req ? ' (required)' : '' ) .'</small></label> ' .
+                '</p>',
+
+    'email' => '<p class="comment-form-email">
+                <input type="text" name="email" id="email" value="' . esc_attr( $commenter['comment_author_email'] ) . '" value="" size="30" tabindex="2" ' . $aria_req . '>' . '
+                <label for="email"><small>' . __( 'Email (will not be published)' ) . ( $req ? ' (required)' : '' ) .'</small></label> ' .
+                '</p>',
+
+    'email' => '<p class="comment-form-url">
+                <input type="text" name="url" id="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" value="" size="30" tabindex="3">' . '
+                <label for="url"><small>' . __( 'Website' ) .'</small></label> ' .
+                '</p>',
+    );
+    
+    comment_form(
+        array(
+            'fields' => apply_filters( 'comment_form_default_fields', $fields ),
+            'comment_notes_before' =>__( ''),
+            'comment_notes_after' => '',
+            'comment_field'  => '<p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>',
+        )   
+    ); 
+    ?>
 
 </div>
