@@ -16,13 +16,8 @@
 
     <?php if ( $wp_query->max_num_pages > 1 ) : ?>
     <div class="pagination">
-        <p class="nav-previous">
-            <span class="meta-nav">&laquo; </span><?php next_posts_link(__( 'Older articles')) ?>
-        </p>
-        <p class="nav-next">
-            <?php previous_posts_link(__( 'Newer articles ')) ?>
-            <span class="meta-nav"> &raquo;</span>
-        </p>
+        <?php next_posts_link(__( ' <span class="meta-nav">&laquo; </span> Older articles')) ?>
+        <?php previous_posts_link(__( 'Newer articles <span class="meta-nav"> &raquo;</span>')) ?>  
     </div>
     <?php endif ?>
 
