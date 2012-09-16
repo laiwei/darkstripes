@@ -1,14 +1,3 @@
-<?php get_header(); ?>
-
-<div id="main">
-<div id="content">
-    <div class="blog-index">
-
-    <article>
-        <h1 class="page-title"><?php _e( 'Search Results for '); ?><span><?php the_search_query(); ?></span></h1>
-    </article>
-
-    <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <header>
@@ -24,11 +13,12 @@
                 <span class="meta-sep"> | </span>
                 <span class="edit-link"><?php edit_post_link( __( 'Edit')) ?></span>
             </p>
-        </header> 
+        </header>
 
-        <div class="entry-content">
-            <?php the_excerpt( __( 'continue reading <span class="meta-nav">&raquo;</span>') ); ?>
+        <div class="entry-content">            
+            <?php the_content(); ?>               
         </div>
+
         <footer>
             <p>
                 <span class="cat-links">
@@ -51,21 +41,5 @@
                 </span>
             </p>
         </footer>
+
     </article>
-
-    <?php endwhile; else: ?>
-        <article>
-            <header>
-                <h2 class="entry-title"><?php _e('No posts were found.'); ?></h2>
-            </header> 
-        </article>
-    <?php endif; ?>
-
-    </div>
-
-    <?php get_sidebar(); ?>
-
-</div>
-</div>
-
-<?php get_footer(); ?>
