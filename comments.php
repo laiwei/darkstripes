@@ -17,11 +17,11 @@
                 _n( 'One Comment', '%1$s Comments', get_comments_number()),
                 number_format_i18n( get_comments_number() )
             );
-            ?> | <a href="#respond"><?php _e( 'Leave a reply &darr;'); ?></a>
+            ?>
         </h3>
     
         <ol>
-            <?php wp_list_comments(); ?>
+            <?php wp_list_comments( array( 'callback' => 'darkstripes_comment' ) ); ?>
         </ol>
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
