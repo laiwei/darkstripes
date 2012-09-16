@@ -17,19 +17,17 @@
                 _n( 'One Comment', '%1$s Comments', get_comments_number()),
                 number_format_i18n( get_comments_number() )
             );
-            ?>
+            ?> | <p class="write-comment-link"><a href="#respond"><?php _e( 'Leave a reply &rarr;'); ?></a></p>
         </h3>
     
-        <p class="write-comment-link"><a href="#respond"><?php _e( 'Leave a reply &rarr;'); ?></a></p>
-        
         <ol>
             <?php wp_list_comments(); ?>
         </ol>
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
         <nav id="comment-nav-below">
-            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'yoko' ) ); ?></div>
-            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'yoko' ) ); ?></div>
+            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments' ) ); ?></div>
+            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;' ) ); ?></div>
         </nav>
         <?php endif;?>
 
@@ -58,7 +56,7 @@
                 <label for="email"><small>' . __( 'Mail (will not be published)' ) . ( $req ? ' (required)' : '' ) .'</small></label> ' .
                 '</p>',
 
-    'email' => '<p class="comment-form-url">
+    'url' => '<p class="comment-form-url">
                 <input type="text" name="url" id="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" value="" size="30" tabindex="3">' . '
                 <label for="url"><small>' . __( 'Website' ) .'</small></label> ' .
                 '</p>',
