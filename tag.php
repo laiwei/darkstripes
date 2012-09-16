@@ -5,9 +5,9 @@
         <div>
             <article role="article">
 
-                <header>  
+                <header>
                     <h1 class="page-title">
-                        <?php _e( 'Category Archives for' ) ?> <span><?php single_cat_title() ?></span>
+                        <?php _e( 'Tag Archives for' ) ?> <span><?php single_tag_title() ?></span>
                     </h1>
                 </header>
                 
