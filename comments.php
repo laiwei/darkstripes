@@ -17,7 +17,7 @@
                 _n( 'One Comment', '%1$s Comments', get_comments_number()),
                 number_format_i18n( get_comments_number() )
             );
-            ?> | <?php _e( 'Leave a reply &rarr;'); ?></a>
+            ?> | <a href="#respond"><?php _e( 'Leave a reply &darr;'); ?></a>
         </h3>
     
         <ol>
