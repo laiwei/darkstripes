@@ -20,11 +20,10 @@ if ( function_exists( 'register_sidebar' ) ) {
     register_sidebar( array (
         'name' => __( 'Primary Sidebar', 'primary-sidebar' ),
         'id' => 'primary-widget-area',
-        'description' => __( 'The primary widget area', 'dir' ),
-        'before_widget' => '<div class="widget">',
-        'after_widget' => "</div>",
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
+        'before_widget' => '<section class="widget-container %2$s" >',
+        'after_widget' => "</section>",
+        'before_title' => '<h1 class="widget-title">',
+        'after_title' => '</h1>',
     ) );
 }
 
