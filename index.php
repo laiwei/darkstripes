@@ -43,7 +43,7 @@
                     <?php comments_popup_link( __( 'Leave a comment'), __( '1 Comment'), __( '% Comments') ) ?>
                 </span>
                 <span class=\"edit-link\">
-                    <?php edit_post_link( '<span class="meta-sep"> | </span>' . __( 'Edit')) ?>
+                    <?php edit_post_link( __( 'Edit'), '<span class="meta-sep"> | </span>' ) ?>
                 </span>
             </p>
         </footer>
