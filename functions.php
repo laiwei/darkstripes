@@ -5,7 +5,6 @@ define( 'TEMPPATH', get_bloginfo('stylesheet_directory'));
 define( 'IMAGES', TEMPPATH. "/images"); 
 
 // menu support
-add_theme_support( 'nav-menus' );
 if ( function_exists( 'register_nav_menus' ) ) {
     register_nav_menus(
         array(
@@ -13,6 +12,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
         )
     );
 }
+
 function darkstripes_menu_args( $args ) {
     $args['show_home'] = true;
     return $args;
