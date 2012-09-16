@@ -1,11 +1,11 @@
 /*
-Theme Name: BlankSlate
-Theme URI: http://tidythemes.com/blankslate/
-Description: BEFORE USING AND ESPECIALLY UPGRADING PLEASE READ: tidythemes.com/concept. The bare essentials of a WordPress theme (an HTML5 boilerplate), no visual CSS styles added. Perfect for those who would like to build their own theme from scratch or for clients if you're a developer or designer. This theme is clean, valid code, semi minified, no programmer comments, SEO-friendly and 100% open source. One custom menu and one widgetized sidebar to get you started. If you don't know CSS and would like to learn we've prepared: tidythemes.com/want-to-learn-css and please visit us in the forum for further help: tidythemes.com/forum - Thank You and Enjoy
-Author: TidyThemes
-Author URI: http://tidythemes.com/
-Version: 2.2
-Tags: one-column, flexible-width, custom-menu, featured-images, microformats, sticky-post, threaded-comments
+Theme Name: DarkStripes
+Theme URI: http://diaspar.dixian.info
+Description: Theme Octopress
+Author: Diaspar
+Author URI: http://diaspar.dixian.info/
+Version: 1.0
+Tags: one-column, flexible-width
 License: GNU General Public License | This theme is completely free and open source to use as you like for both personal and commercial projects without any limitations.
 License URI: https://www.gnu.org/licenses/gpl.html
 */
@@ -1880,7 +1880,9 @@ body>footer p:last-child {
     margin-bottom: 0;
 }
 
-/* CUSTOM   */
+/* END OCTOPRESS STYLES */
+
+/* CUSTOM CHANGES FOR WORDPRESS  */
 
 header[role="banner"] {
     margin: 0;
@@ -1898,10 +1900,9 @@ header hgroup h2 {
     margin-left:20px;
 }
 
-
 #content div article header {
-background: none;
-padding-bottom: 0;
+    background: none;
+    padding-bottom: 0;
 }
 
 article footer {
@@ -1914,8 +1915,7 @@ article footer p {
     margin: 0;
 }
 
-.comments h3 
-{
+.comments h3 {
     background-color: lightGrey;
     padding: 6px;
 }
@@ -1925,23 +1925,20 @@ article footer p {
     list-style: none;
 }
 
-.comments .depth-1
-{
+.comments .depth-1 {
     margin:0px 30px 30px 0;
     padding: 0 0 15px 15px;
     background: url('data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVQIHWNIS0sr/v//PwMMDzY+ADqMahlW4J91AAAAAElFTkSuQmCC') bottom left repeat-x;
 }
 
-.comments li.depth-2, .comments li.depth-3 
-{
+.comments li.depth-2, .comments li.depth-3 {
     border-left:1px solid lightGrey;
     border-top:none;
     margin:30px 0px 30px 35px;
     padding:0 0 0 15px;
 }
 
-.comments .avatar
-{
+.comments .avatar {
     float: left;
     margin: 0 20px 0 0;
 }
@@ -1952,68 +1949,57 @@ article footer p {
     font-weight: bold;
 }
 
-.comment-meta
-{
+.comment-meta {
     font-size: 0.8em;
     color: #AAA;
 }
 
-.comment-content
-{
+.comment-content {
     font-size: 0.9em;
 }
 
-#form-allowed-tags p
-{
+#form-allowed-tags p {
     text-align: left;
 }
 
-#calendar_wrap table
-{
+#calendar_wrap table {
     width : 100%;    
 }
 
-#calendar_wrap td
-{
+#calendar_wrap td {
     border-right : dotted 1px lightgrey;
     text-align : center;
     color : #888;
     font-weight : 12px;
 }
 
-#calendar_wrap td:last-child
-{
+#calendar_wrap td:last-child {
     border-right : none;
 }
 
-#calendar_wrap th
-{
+#calendar_wrap th {
     font-weight : bold;
     color : #AAA;
     font-size : 14px;
     text-align : center;
 }
 
-#calendar_wrap caption
-{
+#calendar_wrap caption {
     background-color : lightgrey;
     text-align : center;
     padding: 3px;
     margin: 3px 0; 
 }
 
-#calendar_wrap tbody a
-{
+#calendar_wrap tbody a {
     background-color : lightgrey;   
 }
 
-#calendar_wrap tfoot td
-{
+#calendar_wrap tfoot td {
     padding-top:5px;
     border-right : none;
 }
 
-/* --- Social Links Custom Widget --- */
 .widget_sociallinks a {
     padding:0 20px;
 }
@@ -2041,6 +2027,3 @@ article footer p {
 .widget_sociallinks a.googleplus {
     background:url(images/googleplus-icon.png) 0 0 no-repeat;
 }
-
-
-
