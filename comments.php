@@ -54,8 +54,8 @@
                 '</p>',
 
     'email' => '<p class="comment-form-email">
-                <input type="text" name="email" id="email" value="' . esc_attr( $commenter['comment_author_email'] ) . '" value="" size="30" tabindex="2" ' . $aria_req . '>' . '
-                <label for="email"><small>' . __( 'Email (will not be published)' ) . ( $req ? ' (required)' : '' ) .'</small></label> ' .
+                <input type="text" name="email" id="email" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" tabindex="2" ' . $aria_req . '>' . '
+                <label for="email"><small>' . __( 'Mail (will not be published)' ) . ( $req ? ' (required)' : '' ) .'</small></label> ' .
                 '</p>',
 
     'email' => '<p class="comment-form-url">
