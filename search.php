@@ -4,7 +4,7 @@
 <div id="content">
     <div class="blog-index">
 
-    <article
+    <article>
         <h1 class="page-title"><?php _e( 'Search Results for '); ?><span><?php the_search_query(); ?></span></h1>
     </article>
 
