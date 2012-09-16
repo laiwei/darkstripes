@@ -13,13 +13,11 @@ if ( function_exists( 'register_nav_menus' ) ) {
         )
     );
 }
-if (function_exists('wp_page_menu_args')) {
-    function wp_page_menu_args() 
-    {
-        $args['show_home'] = true;
-        return $args;
-    }
+function darkstripes_menu_args( $args ) {
+    $args['show_home'] = true;
+    return $args;
 }
+add_filter( 'wp_page_menu_args', 'darkstripes_menu_args' );
 
 // Read More
 function add_p_tag($link){
