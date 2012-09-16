@@ -1,6 +1,11 @@
 <article class="hentry" role="article" id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
     <header>
         <h1 class="entry-title"><?php the_title(); ?></h1>
+        <p>
+            <span class="meta-prep meta-prep-author">By </span>
+            <span class="author vcard"><?php the_author_posts_link(); ?></span>
+            <span class="edit-link"><?php edit_post_link( __( '<span class="meta-sep"> | </span>Edit')) ?></span>
+        </p>
     </header>
 
     <div>
@@ -11,7 +16,7 @@
     </div>
 
     <footer>
-        <?php edit_post_link( __( 'Edit' ), '<span class="edit-link">', '</span>' ) ?>
+
     </footer>
 
     <?php comments_template('', true); ?>
