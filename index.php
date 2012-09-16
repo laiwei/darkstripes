@@ -8,11 +8,7 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <header>
-            <h1 class="entry-title">
-                <a href="<?php the_permalink(); ?>" rel="bookmark">
-                    <?php the_title(); ?>
-                </a>
-            </h1>
+            <h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
             <p class="meta">
                 <time datetime="<?php the_time('Y-m-d\TH:i:sO') ?>" pubdate="" data-updated="true">
                     <?php the_time( get_option( 'date_format' ) ); ?>

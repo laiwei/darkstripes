@@ -9,7 +9,7 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title><?php bloginfo('name'); ?> | <?php wp_title(); ?></title>
+     <title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
     
     <script src="<?php bloginfo('template_url'); ?>/javascripts/modernizr-2.0.js" type="text/javascript"></script>
     <script src="<?php bloginfo('template_url'); ?>/javascripts/ender.js" type="text/javascript"></script>
