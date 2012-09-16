@@ -4,7 +4,9 @@
 <div id="content">
     <div class="blog-index">
 
-    <h1 class="page-title"><?php _e( 'Search Results for '); ?><span><?php the_search_query(); ?></span></h1>
+    <article
+        <h1 class="page-title"><?php _e( 'Search Results for '); ?><span><?php the_search_query(); ?></span></h1>
+    </article>
 
     <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -55,7 +57,7 @@
     <?php endwhile; else: ?>
         <article>
             <header>
-                <h1 class="entry-title"><?php _e('No posts were found.'); ?></h1>
+                <h2 class="entry-title"><?php _e('No posts were found.'); ?></h2>
             </header> 
         </article>
     <?php endif; ?>
