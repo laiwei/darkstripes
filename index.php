@@ -33,19 +33,17 @@
                     </span>
                     <?php echo get_the_category_list(', '); ?>
                 </span>
-                <span class="meta-sep"> | </span>
                 <span class="tag-links">
                     <span class="entry-utility-prep entry-utility-prep-tag-links">
-                        <?php the_tags( __('Tagged: '), ', ', '' ) ?>
+                        <?php the_tags( '<span class="meta-sep"> | </span>' . __('Tagged: '), ', ', '' ) ?>
                     </span>
                 </span>
                 <span class="meta-sep"> | </span>
                 <span class="comments-link">
                     <?php comments_popup_link( __( 'Leave a comment'), __( '1 Comment'), __( '% Comments') ) ?>
                 </span>
-                <span class="meta-sep"> | </span>
                 <span class=\"edit-link\">
-                    <?php edit_post_link( __( 'Edit')) ?>
+                    <?php edit_post_link( '<span class="meta-sep"> | </span>' . __( 'Edit')) ?>
                 </span>
             </p>
         </footer>
