@@ -51,7 +51,7 @@
     <?php comments_template(); ?>
 
     <?php endwhile; else: ?>
-        <p><?php _e('No posts were found.'); ?></p>
+        <p><h1 class="entry-title"><?php _e('No posts were found.'); ?></h1></p>
     <?php endif; ?>
 
     <?php if ( $wp_query->max_num_pages > 1 ) : ?>
