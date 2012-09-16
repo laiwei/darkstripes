@@ -42,7 +42,7 @@
         <?php get_search_form(); ?>
         <?php
             wp_nav_menu( array(
-                'container' => false,
+                'container' => '',
                 'menu_class' => 'main-navigation',
                 'menu' => 'Main'
             ));
