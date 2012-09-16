@@ -2,7 +2,7 @@
 
 <?php 
 global $query_string;
-query_posts($query_string . "&posts_per_page=-1"); 
+query_posts($query_string . "&posts_per_page=-1");
 ?>
 
 <div id="main">
@@ -10,9 +10,17 @@ query_posts($query_string . "&posts_per_page=-1");
         <div>
             <article role="article">
 
-                <header>  
+                <header>
                     <h1 class="page-title">
-                        <?php _e( 'Category Archives for' ) ?> <span><?php single_cat_title() ?></span>
+                        <?php if ( is_day() ) : ?>
+                            <?php printf( __( 'Daily Archives: <span>%s</span>' ), get_the_time(get_option('date_format')) ) ?>
+                        <?php elseif ( is_month() ) : ?>
+                            <?php printf( __( 'Monthly Archives: <span>%s</span>' ), get_the_time('F Y') ) ?>
+                        <?php elseif ( is_year() ) : ?>
+                            <?php printf( __( 'Yearly Archives: <span>%s</span>'), get_the_time('Y') ) ?>
+                        <?php elseif ( isset($_GET['paged']) && !empty($_GET['paged']) ) : ?>
+                            Blog Archives
+                        <?php endif; ?>
                     </h1>
                 </header>
                 
