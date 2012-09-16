@@ -10,14 +10,11 @@ query_posts($query_string . "&posts_per_page=-1");
         <div>
             <article role="article">
 
+                <?php the_post(); ?>
+
                 <header>  
                     <h1 class="page-title author">
-                        <?php 
-                        printf( 
-                            __( 'Author Archives: <span class="vcard">%s</span>', 'blankslate' ),
-                            '<a class="url fn n" href="'.$authordata->user_url.'" title="'.$authordata->display_name.'" rel="me">'.$authordata->display_name.'</a>'
-                        );
-                        ?>
+                        <?php printf( __( 'Author Archives: <span class="vcard">%s</span>' ), get_the_author()); ?>
                     </h1>
                 </header>
                 
