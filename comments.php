@@ -21,7 +21,7 @@
         </h3>
     
         <ol>
-            <?php wp_list_comments( array( 'callback' => 'darkstripes_comment' ) ); ?>
+            <?php wp_list_comments( array( 'callback' => 'darkstripes_comments' ) ); ?>
         </ol>
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
