@@ -2027,3 +2027,7 @@ article footer p {
 .widget_sociallinks a.googleplus {
     background:url(images/googleplus-icon.png) 0 0 no-repeat;
 }
+
+.unapproved {
+    font-style:italic;
+}
