@@ -49,7 +49,7 @@
     array(
         'comment_notes_before' =>__( ''),
         'comment_notes_after' => '',
-        'comment_field'  => '<textarea id="comment" name="comment" rows="8"></textarea>',
+        'comment_field'  => '<p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>',
     )   
     ); ?>
 
