@@ -1,7 +1,7 @@
 DarkStripes Theme for Wordpres
 ===============================
 
-This theme is a port of the Dark Stripes theme for Octopress, wich is based on the Original Octopress theme created by Brandon Mathis. It has a responsive layout and supports one column and one sidebar.
+This theme is a port of the [Dark Stripes Theme for Octopress](https://github.com/amelandri/darkstripes "Dark Stripes Theme for Octopress"), wich is based on the [Original Octopress theme](http://www.octopress.org/ "Original Octopress theme") created by Brandon Mathis. It has a responsive layout and supports one column and one sidebar.
 
 This is the 0.9 beta version of the theme and is not recommend it for production yet.
 
