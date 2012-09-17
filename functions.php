@@ -1,5 +1,8 @@
 <?php
 
+// include
+require_once('includes/theme-options.php');
+
 //constants
 define( 'TEMPPATH', get_bloginfo('stylesheet_directory'));
 define( 'IMAGES', TEMPPATH. "/images"); 
