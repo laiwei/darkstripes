@@ -6,7 +6,8 @@ DarkStripes WordPress Theme | Demo: diaspar.dixian.info
 
 - - DESCRIPTION - -
 
-Simple theme based on Octopress theme
+This theme is a port of the Dark Stripes theme for Octopress, wich is based on the Original Octopress theme created by Brandon Mathis. 
+It has a responsive layout and supports one column and one sidebar. This theme is not ready for production yet.
 
 - - LICENSE - -
 
