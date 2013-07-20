@@ -37,7 +37,7 @@
     </header>
     <nav role="navigation">
         <ul class="subscription" data-subscription="rss">
-            <li><a href="/feed/" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+            <li><a href="/?feed=rss" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
         </ul>
         <?php get_search_form(); ?>
         <?php

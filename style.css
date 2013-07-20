@@ -155,7 +155,7 @@ body>footer {
     font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 }
 body>header h1 {
-    font-size: 2.2em;
+    font-size: 2.0em;
     font-family: "League", Helvetica, Arial, sans-serif;
     font-weight: normal;
     line-height: 1.2em;
@@ -167,7 +167,7 @@ body>header h2 {
 body {
     line-height: 1.5em;
     color: #222;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 h1 {
     font-size: 1.8em;
@@ -186,7 +186,7 @@ h1 span {
     font-size: 1em;
 }
 h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     line-height: 1.2em;
 }
 }h1, h2, h3, h4, h5, h6 {
@@ -587,7 +587,7 @@ aside.sidebar {
 body>header h1 {
     display: inline-block;
     margin: 0;
-    font-size: 2.7em;
+    font-size: 2.5em;
     padding-left: 0.1em;
     text-shadow: rgba(0, 0, 0, 0.8) 0 0 8px;
     float: left;
@@ -1020,7 +1020,7 @@ article>footer p.meta a.articlenav:hover {
     padding-bottom: 0;
 }
 #content .blog-index article h1 {
-    font-size: 1.8em;
+    font-size: 1.4em;
 }
 #content .blog-index article h1 a {
     color: #555555;

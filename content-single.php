@@ -2,14 +2,18 @@
 
 <header>
     <h1 class="entry-title"><?php the_title(); ?></h1>
-    <p class="meta">
-        <time datetime="<?php the_time('Y-m-d\TH:i:sO') ?>" pubdate="" data-updated="true">
-            <?php the_time( get_option( 'date_format' ) ); ?>
-        </time>
-    </p>   
     <p>
-        <span class="meta-prep meta-prep-author">By </span>
+        <span class="meta-prep meta-prep-author">作者： </span>
         <span class="author vcard"><?php the_author_posts_link(); ?></span>
+        <span class="meta-sep"> | </span>
+        <?php if(function_exists('the_views')) :?>
+            <span class="leave-reply" >&nbsp; <?php echo the_views();?> </span>
+        <?php endif; ?>
+        <span class="meta-sep"> &nbsp;|&nbsp; </span>
+        <time datetime="<?php the_time('Y-m-d\TH:i:sO') ?>" pubdate="" data-updated="true">
+            <?php  the_time( get_option( 'date_format' ) ); ?> &nbsp;
+            <?php  the_time( get_option( 'time_format' ) ); ?>
+        </time>
         <span class="edit-link"><?php edit_post_link( __( 'Edit'), '<span class="meta-sep"> | </span>') ?></span>
     </p>
 </header>
